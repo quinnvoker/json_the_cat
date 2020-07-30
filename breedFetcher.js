@@ -13,7 +13,7 @@ const fetchBreedDescription = (breedName, callback) => {
       callback(`Breed '${breedName}' not found in database!`);
       return;
     }
-    callback(error, data[0].description);
+    callback(error, data[0].description.trim());
   });
 };
 
