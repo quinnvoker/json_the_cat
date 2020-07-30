@@ -17,7 +17,6 @@ describe('fetchBreedDescription', () => {
   });
   it('should have no description and return an error for an invalid breed, via callback', (done) => {
     fetchBreedDescription('Dalmation', (err, desc) => {
-      // we expect no error for this scenario
       assert.isOk(err);
       assert.isNotOk(desc);
       done();
